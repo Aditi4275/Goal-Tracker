@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Goal - Goal Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="delete-goal-page">
+    <div class="container">
+        <h1>Delete Goals</h1>
+        <button onclick="location.href='index.html'" class="btn btn-back">← Back</button>
+        
+        <div class="warning-message">
+            <p>⚠️ Deleting a goal will permanently remove it and all its subtasks.</p>
+        </div>
+        
+        <div id="goals-container" class="goals-list">
+            <!-- Goals will be loaded here dynamically -->
+            <div class="loading">Loading your goals...</div>
+        </div>
+    </div>
+    
+    <script src="js/delete_goal.js"></script>
+</body>
+</html>

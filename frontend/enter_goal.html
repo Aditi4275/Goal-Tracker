@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Goal - Goal Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="enter-goal-page">
+    <div class="container">
+        <h1>Enter Your Goal</h1>
+        <button onclick="location.href='index.html'" class="btn btn-back">← Back</button>
+        
+        <div class="form-container">
+            <div class="form-step" id="step1">
+                <label for="goal">What's your goal?</label>
+                <textarea id="goal" placeholder="e.g., Learn JavaScript, Run a marathon, etc."></textarea>
+                <button onclick="nextStep()" class="btn btn-primary">Next</button>
+            </div>
+            
+            <div class="form-step hidden" id="step2">
+                <label>Break it down into subtasks</label>
+                <div id="subtasks-container">
+                    <div class="subtask-input">
+                        <input type="text" placeholder="Enter subtask (e.g., Study for 1 hour)">
+                        <button onclick="addSubtaskField()" class="btn btn-add">+ Add More</button>
+                    </div>
+                </div>
+                <button onclick="submitGoal()" class="btn btn-primary">Submit Goal</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/enter_goal.js"></script>
+</body>
+</html>

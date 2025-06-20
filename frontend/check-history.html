@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check History - Goal Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="history-page">
+    <div class="container">
+        <h1>Your Goal History</h1>
+        <button onclick="location.href='index.html'" class="btn btn-back">← Back</button>
+        
+        <div class="filter-container">
+            <label for="date-filter">Filter by date:</label>
+            <input type="date" id="date-filter" onchange="filterGoalsByDate()">
+            <button onclick="clearFilter()" class="btn btn-small">Clear Filter</button>
+        </div>
+        
+        <div id="goals-container" class="goals-list">
+            <!-- Goals will be loaded here dynamically -->
+            <div class="loading">Loading your goals...</div>
+        </div>
+    </div>
+    
+    <script src="js/check-history.js"></script>
+</body>
+</html>
